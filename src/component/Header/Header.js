@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.scss";
+import Phone from "../Phone/Phone";
 
 
 export default class Header extends React.Component {
@@ -11,11 +12,12 @@ export default class Header extends React.Component {
                         <img src="#" alt="Единый центр записи" className="logo__img" />
                         <p className="logo__text">Единый <br />Центр Записи</p>
                     </div>
+                    <a href="tel:80300 5000" className="header__number">
+                        <img src="img/phone-square.png" alt="телефон" className="header__phone_img" />
+                            <Phone  Phone ={380932664618} Plus={1}/>
+                    </a>
+
                     <div className="header__phone" role="" aria-label="телефон компании 80300 5000">
-                        <a href="tel:80300 5000" className="header__number">
-                            <img src="#" alt="телефон" className="header__phone_img" />
-                            <span className="header__phone_text">80300 5000</span>
-                        </a>
                         <nav role="navigation" aria-label="главное меню" className="header__nav">
                             <ul className="header__topmenu">
                                 <li><a className="header__topmenu_link header__topmenu_link-active" href="#">Главная</a>
